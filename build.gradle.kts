@@ -64,18 +64,6 @@ tasks {
     }
 
     shadowJar {
-        exclude(
-            "org/h2/**",
-            "org/slf4j/**",
-            "org/spongepowered/**",
-            "com/zaxxer/**",
-            "com/github/benmanes/caffeine/**",
-            "net/kyori/**",
-            "com/google/errorprone/**",
-            "io/leangen/geantyref/**",
-            "org/jspecify/annotations/**"
-        )
-
         archiveBaseName.set(getProjectName(rootProject.name))
         archiveVersion.set(rootProject.version.toString())
         archiveClassifier.set("")
