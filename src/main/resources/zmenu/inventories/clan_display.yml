@@ -55,7 +55,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<white>{clan_name}</white>"
+        display: "<white>%clan_name%</white>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -76,7 +76,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<gray>{clan_name}</gray>"
+        display: "<gray>%clan_name%</gray>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -97,7 +97,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<dark_gray>{clan_name}</dark_gray>"
+        display: "<dark_gray>%clan_name%</dark_gray>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -118,7 +118,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<black>{clan_name}</black>"
+        display: "<black>%clan_name%</black>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -139,7 +139,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<red>{clan_name}</red>"
+        display: "<red>%clan_name%</red>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -160,7 +160,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<dark_red>{clan_name}</dark_red>"
+        display: "<dark_red>%clan_name%</dark_red>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -181,7 +181,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<dark_green>{clan_name}</dark_green>"
+        display: "<dark_green>%clan_name%</dark_green>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -202,7 +202,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<green>{clan_name}</green>"
+        display: "<green>%clan_name%</green>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -223,7 +223,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<gold>{clan_name}</gold>"
+        display: "<gold>%clan_name%</gold>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -244,7 +244,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<yellow>{clan_name}</yellow>"
+        display: "<yellow>%clan_name%</yellow>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -265,7 +265,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<dark_purple>{clan_name}</dark_purple>"
+        display: "<dark_purple>%clan_name%</dark_purple>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -286,7 +286,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<light_purple>{clan_name}</light_purple>"
+        display: "<light_purple>%clan_name%</light_purple>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -307,7 +307,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<blue>{clan_name}</blue>"
+        display: "<blue>%clan_name%</blue>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -328,7 +328,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<aqua>{clan_name}</aqua>"
+        display: "<aqua>%clan_name%</aqua>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
@@ -349,7 +349,7 @@ items:
     actions:
       - type: close
       - type: set-clan-display
-        display: "<dark_aqua>{clan_name}</dark_aqua>"
+        display: "<dark_aqua>%clan_name%</dark_aqua>"
       - type: message
         messages:
         - "<green>You changed your clan display to %byteclans_clan_display%"
