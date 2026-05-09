@@ -76,7 +76,7 @@ items:
 
   # Clan Enemy item
   clan-enemy-item:
-    type: BYTECLANS_ENEMY_ITEM
+    type: BYTECLANS_CLAN_ENEMY_ITEM
     slots:
     - 10-16
     - 19-25
