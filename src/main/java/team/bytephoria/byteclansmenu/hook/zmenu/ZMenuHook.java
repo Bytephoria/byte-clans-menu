@@ -118,7 +118,7 @@ public final class ZMenuHook {
             this.paperPlugin.getSLF4JLogger().info("{} directory was created.", name);
         }
 
-        final File[] files = directory.listFiles((_, fileName) ->
+        final File[] files = directory.listFiles((file, fileName) ->
                 fileName.toLowerCase().endsWith(".yml")
         );
 
