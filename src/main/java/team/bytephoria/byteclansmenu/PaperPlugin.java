@@ -44,7 +44,6 @@ public final class PaperPlugin extends JavaPlugin {
         if (this.zMenuHook != null) {
             this.zMenuHook.reload();
         }
-
     }
 
     public ZMenuHook zMenuHook() {
