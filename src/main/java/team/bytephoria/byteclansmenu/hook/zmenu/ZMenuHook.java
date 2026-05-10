@@ -5,6 +5,7 @@ import fr.maxlego08.menu.api.exceptions.InventoryException;
 import org.bukkit.Bukkit;
 import org.jetbrains.annotations.NotNull;
 import team.bytephoria.byteclansmenu.PaperPlugin;
+import team.bytephoria.byteclansmenu.hook.zmenu.action.loader.ClanCreateActionLoader;
 import team.bytephoria.byteclansmenu.hook.zmenu.action.loader.SetClanDisplayActionLoader;
 import team.bytephoria.byteclansmenu.hook.zmenu.action.loader.SetClanInviteStateActionLoader;
 import team.bytephoria.byteclansmenu.hook.zmenu.action.loader.SetClanPvPModeActionLoader;
@@ -68,6 +69,12 @@ public final class ZMenuHook {
     public void registerDefaultActions() {
         this.menuPlugin.getButtonManager().registerAction(
                 new SetClanDisplayActionLoader()
+        );
+
+        this.menuPlugin.getButtonManager().registerAction(new ClanCreateActionLoader(
+                this.paperPlugin.getConfig(),
+                this.paperPlugin.mainThreadExecutor(),
+                this.paperPlugin.chatInput())
         );
 
         this.menuPlugin.getButtonManager().registerAction(new SetClanPvPModeActionLoader());

@@ -1,0 +1,10 @@
+messages:
+  create:
+    timeout: "<red>The time for create clan was expired."
+    success: "<gradient:#00e676:#1de9b6>The clan</gradient> <gold><bold>{clan}</bold></gold> <gradient:#00e676:#1de9b6>has been created successfully.</gradient>"
+    already-in-clan: "<red>You are already in a <bold>clan</bold>.</red>"
+    name-invalid-characters: "<red>Clan name can only contain <bold>letters and numbers</bold>."
+    name-taken: "<red>The clan name <gold><bold>{clan}</bold></gold> is already taken.</red>"
+    name-too-short: "<red>Clan name must be at least <gold><bold>{min}</bold></gold> characters.</red>"
+    name-too-long: "<red>Clan name must be at most <gold><bold>{max}</bold></gold> characters.</red>"
+    cancelled: "<red>Clan creation was cancelled by an external plugin.</red>"
