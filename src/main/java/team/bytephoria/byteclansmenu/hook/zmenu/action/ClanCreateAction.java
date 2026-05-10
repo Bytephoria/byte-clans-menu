@@ -87,6 +87,10 @@ public final class ClanCreateAction extends Action {
             return;
         }
 
+        message = message
+                .replace("{min}", Integer.toString(ByteClans.getAPI().globalSettings().minimumNameChars()))
+                .replace("{max}", Integer.toString(ByteClans.getAPI().globalSettings().maximumNameChars()));
+
         if (clanName != null) {
             message = message.replace("{clan}", clanName);
         }
