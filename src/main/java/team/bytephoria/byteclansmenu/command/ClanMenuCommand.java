@@ -12,6 +12,12 @@ public final class ClanMenuCommand {
         this.paperPlugin = paperPlugin;
     }
 
+    @Command("clan")
+    public void clan(final @NotNull Player player) {
+        assert this.paperPlugin.zMenuHook().menuPlugin() != null;
+        this.paperPlugin.zMenuHook().menuPlugin().getInventoryManager().openInventory(player, "clan");
+    }
+
     @Command("clan menu")
     public void clanMenu(final @NotNull Player player) {
         assert this.paperPlugin.zMenuHook().menuPlugin() != null;
