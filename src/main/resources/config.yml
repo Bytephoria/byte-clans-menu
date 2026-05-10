@@ -1,6 +1,6 @@
 messages:
   create:
-    timeout: "<red>The time for create clan was expired."
+    timeout: "<red>The clan creation request has expired.</red>"
     success: "<gradient:#00e676:#1de9b6>The clan</gradient> <gold><bold>{clan}</bold></gold> <gradient:#00e676:#1de9b6>has been created successfully.</gradient>"
     already-in-clan: "<red>You are already in a <bold>clan</bold>.</red>"
     name-invalid-characters: "<red>Clan name can only contain <bold>letters and numbers</bold>."

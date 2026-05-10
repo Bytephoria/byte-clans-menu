@@ -12,11 +12,8 @@ open-requirement:
         - type: sound
           sound: UI_BUTTON_CLICK
       deny:
-        - type: message
-          messages:
-          - "<#EF4444>You must be in a clan to open this menu."
-        - type: sound
-          sound: ENTITY_VILLAGER_NO
+        - type: inventory
+          inventory: no_clan
 
 patterns:
   - "byteclans-decoration"
