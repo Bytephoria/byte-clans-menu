@@ -23,6 +23,7 @@ public final class ZMenuHook {
     };
 
     private static final String[] DEFAULT_INVENTORIES = {
+            "zmenu/inventories/no_clan.yml",
             "zmenu/inventories/clan.yml",
             "zmenu/inventories/clan_allies.yml",
             "zmenu/inventories/clan_display.yml",
