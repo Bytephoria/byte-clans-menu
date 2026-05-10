@@ -14,8 +14,6 @@ import team.bytephoria.byteclansmenu.hook.zmenu.buttons.loader.ClanListButtonLoa
 import team.bytephoria.byteclansmenu.hook.zmenu.buttons.loader.ClanMemberButtonLoader;
 
 import java.io.File;
-import java.time.Duration;
-import java.time.temporal.ChronoUnit;
 
 public final class ZMenuHook {
 
@@ -69,7 +67,7 @@ public final class ZMenuHook {
 
     public void registerDefaultActions() {
         this.menuPlugin.getButtonManager().registerAction(
-                new SetClanDisplayActionLoader(Duration.of(5, ChronoUnit.HOURS))
+                new SetClanDisplayActionLoader()
         );
 
         this.menuPlugin.getButtonManager().registerAction(new SetClanPvPModeActionLoader());

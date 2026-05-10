@@ -9,19 +9,11 @@ import org.jetbrains.annotations.NotNull;
 import team.bytephoria.byteclans.api.access.ByteClans;
 import team.bytephoria.byteclans.api.manager.ClanSettingsManager;
 
-import java.time.Duration;
-
 public final class SetClanDisplayAction extends Action {
 
     private final String display;
-    private final Duration defaultDuration;
-
-    public SetClanDisplayAction(
-            final @NotNull String display,
-            final @NotNull Duration defaultDuration
-    ) {
+    public SetClanDisplayAction(final @NotNull String display) {
         this.display = display;
-        this.defaultDuration = defaultDuration;
     }
 
     @Override
@@ -40,7 +32,7 @@ public final class SetClanDisplayAction extends Action {
                     final String finalDisplay = this.display
                             .replace("%clan_name%", clanMember.clan().data().name());
 
-                    clanSettingsManager.renameDisplay(clanMember, finalDisplay, this.defaultDuration);
+                    clanSettingsManager.renameDisplay(clanMember, finalDisplay, ByteClans.getAPI().globalSettings().displayNameChangeCooldown());
                 });
 
     }
