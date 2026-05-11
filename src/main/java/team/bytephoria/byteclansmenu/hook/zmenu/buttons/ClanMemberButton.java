@@ -44,6 +44,9 @@ public final class ClanMemberButton extends PaginateButton {
                         placeholders.register("role_display", member.role().displayName());
                         placeholders.register("joined_at", COMPLETE_FORMATTER.format(member.data().joinedAt()));
                         placeholders.register("last_seen_at", COMPLETE_FORMATTER.format(member.data().lastSeenAt()));
+                        placeholders.register("kills", member.statistics().kills().toString());
+                        placeholders.register("deaths", member.statistics().deaths().toString());
+                        placeholders.register("kdr", String.format("%.2f", member.statistics().kdr()));
 
                         if (menuItemStack.getMaterial().equals(Material.PLAYER_HEAD.name())) {
                             final ItemStack itemStack = menuItemStack.build(player, true, placeholders);
