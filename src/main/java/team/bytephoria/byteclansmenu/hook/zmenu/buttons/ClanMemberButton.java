@@ -38,8 +38,8 @@ public final class ClanMemberButton extends PaginateButton {
                     final List<ItemStack> itemStacks = new LinkedList<>();
 
                     for (final ClanMember member : members) {
-                        placeholders.register("member_uuid", member.uniqueId().toString());
-                        placeholders.register("member_name", member.name());
+                        placeholders.register("uuid", member.uniqueId().toString());
+                        placeholders.register("name", member.name());
                         placeholders.register("role_id", member.role().id());
                         placeholders.register("role_display", member.role().displayName());
                         placeholders.register("joined_at", COMPLETE_FORMATTER.format(member.data().joinedAt()));
