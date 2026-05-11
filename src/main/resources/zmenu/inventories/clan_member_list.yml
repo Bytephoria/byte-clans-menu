@@ -83,11 +83,15 @@ items:
     - 28-34
     item:
       material: PLAYER_HEAD
-      name: "<#34D399>%member_name%"
+      name: "<#34D399>%name%"
       lore:
       - ""
       - "<#D1D5DB>Role: <#A78BFA>%role_display%</#A78BFA> <gray>(%role_id%)</gray>"
       - "<#D1D5DB>Joined: <#6EE7B7>%joined_at%</#6EE7B7>"
       - "<#D1D5DB>Last Seen: <#FBBF24>%last_seen_at%</#FBBF24>"
+      - ""
+      - "<#D1D5DB>Kills: <#FBBF24>%kills%</#FBBF24>"
+      - "<#D1D5DB>Deaths: <#FBBF24>%deaths%</#FBBF24>"
+      - "<#D1D5DB>Kdr: <#FBBF24>%kdr%</#FBBF24>"
       - ""
       - "<#9CA3AF>Clan member information"
