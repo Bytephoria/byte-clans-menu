@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    compileOnly(files("libraries/ByteClans-paper-1.9.0.jar"))
+    compileOnly(files("libraries/ByteClans-paper-1.11.0.jar"))
     compileOnly("fr.maxlego08.menu:zmenu-api:1.1.0.0")
     compileOnly("me.clip:placeholderapi:2.12.2")
 
