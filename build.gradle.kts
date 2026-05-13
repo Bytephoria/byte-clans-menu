@@ -10,11 +10,13 @@ repositories {
     maven("https://repo.papermc.io/repository/maven-public/")
     maven("https://repo.extendedclip.com/releases/")
     maven("https://repo.groupez.dev/releases")
+    maven("https://jitpack.io")
 }
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-    compileOnly(files("libraries/ByteClans-paper-1.11.0.jar"))
+    compileOnly("com.github.bytephoria.byte-clans:bukkit-api:1.12.1")
+
     compileOnly("fr.maxlego08.menu:zmenu-api:1.1.0.0")
     compileOnly("me.clip:placeholderapi:2.12.2")
 
