@@ -61,6 +61,11 @@ paper {
 }
 
 tasks {
+
+    jar {
+       enabled = false
+    }
+
     generatePaperPluginDescription {
         useGoogleMavenCentralProxy()
     }
