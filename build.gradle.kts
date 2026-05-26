@@ -79,6 +79,8 @@ tasks {
 
 }
 
+java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+
 /**
  * Converts a hyphen-separated project name into PascalCase.
  */
